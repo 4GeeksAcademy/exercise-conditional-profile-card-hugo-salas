@@ -36,8 +36,8 @@ function render(variables = {}) {
           <h1>${variables.name || "John"} ${variables.lastName || "Doe"}</h1>
           <h2>${variables.role || "Web developer"}</h2>
           <h3>${variables.city || "Miami"}, ${variables.country || "USA"}</h3>
-          <ul class="position-${variables.socialMediaPosition.toLowerCase() ||
-            "right"}">
+          <ul class="${variables.socialMediaPosition.toLowerCase() ||
+            "position-right"}">
             <li><a href="https://twitter.com/${variables.twitter ||
               "4geeksacademy"}"><i class="fab fa-twitter"></i></a></li>
             <li><a href="https://github.com/${variables.github ||
